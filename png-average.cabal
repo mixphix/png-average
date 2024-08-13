@@ -1,0 +1,30 @@
+cabal-version:   3.4
+name:            png-average
+version:         0.0.0
+license:         BSD-3-Clause
+license-file:    LICENSE
+author:          Melanie Phoenix Brown
+maintainer:      brown.m@pm.me
+category:        Graphics
+build-type:      Simple
+extra-doc-files: CHANGELOG.md
+
+executable png-average
+  ghc-options:      -Wall -O2 -threaded
+  main-is:          Main.hs
+  hs-source-dirs:   app
+  default-language: GHC2021
+  default-extensions:
+    BlockArguments
+    LambdaCase
+    OverloadedLists
+  build-depends:
+    , base         >=4.17.0.0
+    , bytestring
+    , containers
+    , control-block
+    , directory
+    , JuicyPixels
+    , lens
+    , mtl
+    , transformers
